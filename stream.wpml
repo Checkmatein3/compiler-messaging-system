@@ -1,0 +1,8 @@
+.h(text="Select Stream")
+
+.t(file="streamphp1.php").v(function="printStreamsWithUsername",args="$username").t(file="streamphp2.php")
+
+.i(action="view.php",btnName="checkForNew",btnText="View Stream",text="",type="hidden",name="username",value="<?php echo $username;?>",text="Stream: ",name="stream",value="<?php echo $stream;?>")
+
+.d()
+.l(text="Change User",link="index.php")

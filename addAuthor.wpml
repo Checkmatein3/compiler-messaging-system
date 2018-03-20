@@ -1,0 +1,9 @@
+.h(text="Add/Remove Author")
+.t(file="addAuthorphp1.php").a().t(file="addAuthorphp2.php").a(remove="true")
+.t(file="addAuthorphp3.php").v(function="printStreamNames",args="").t(file="addAuthorphp4.php")
+
+.i(action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>",text="Author: ",name="author",value="",text="Stream List: ",name="streamList",value="",text="",type="hidden",name="username",value="<?php echo $username;?>",text="",type="hidden",name="stream",value="<?php echo $stream;?>",text="Add",type="radio",name="authorAction",checked,value="add",text="Remove",type="radio",name="authorAction",value="remove")
+
+.t(file="viewLink.php")
+.d()
+.l(text="Change User",link="index.php")

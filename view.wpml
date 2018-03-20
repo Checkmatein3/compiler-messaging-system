@@ -1,0 +1,36 @@
+.h(text="View")
+
+.t(file="viewphp1.php").v(function="printNextPost",args="$sortMode -1 NO_STREAM+$username+$stream")
+
+.t(file="viewphp2.php").v(function="printPrevPost",args="$sortMode $currentPostIndex $currentStream+$username+$stream")
+
+.t(file="viewphp3.php").v(function="printNextPost",args="$sortMode $currentPostIndex $currentStream+$username+$stream")
+
+.t(file="viewphp4.php").v(function="markAllPostsAsRead",args="$stream+$username")
+
+.t(file="viewphp5.php").v(function="printCurrentPost",args="$sortMode $currentPostIndex $currentStream+$username+$stream")
+.t(file="viewphp6.php")
+
+.i(action="post.php",btnName="postToStream",btnText="Post to Stream",text="",name="sortMode",type="hidden",value="<?php echo $sortMode;?>",text="",name="username",type="hidden",value="<?php echo $username;?>",text="",name="stream",type="hidden",value="<?php echo $stream;?>")
+
+.i(action="stream.php",btnName="changeStream",btnText="Change Stream",text="",name="sortMode",type="hidden",value="<?php echo $sortMode;?>",text="",name="username",type="hidden",value="<?php echo $username;?>")
+
+.i(action="addAuthor.php",btnName="addAuthor",btnText="Add/Remove Author",text="",name="sortMode",type="hidden",value="<?php echo $sortMode;?>",text="",name="username",type="hidden",value="<?php echo $username;?>",text="",name="stream",type="hidden",value="<?php echo $stream;?>")
+.d()
+
+.i(action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>",btnName="markAll",btnText="Mark All Posts As Read",text="",name="sortMode",type="hidden",value="<?php echo $sortMode;?>",text="",name="currentPostIndex",type="hidden",value="<?php echo $currentPostIndex;?>",text="",name="currentStream",type="hidden",value="<?php echo $currentStream;?>",text="",name="username",type="hidden",value="<?php echo $username;?>",text="",name="stream",type="hidden",value="<?php echo $stream;?>")
+
+.i(action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>",btnName="checkForNew",btnText="Check For New",text="",name="sortMode",type="hidden",value="<?php echo $sortMode;?>",text="",name="currentPostIndex",type="hidden",value="<?php echo $currentPostIndex;?>",text="",name="currentStream",type="hidden",value="<?php echo $currentStream;?>",text="",name="username",type="hidden",value="<?php echo $username;?>",text="",name="stream",type="hidden",value="<?php echo $stream;?>")
+
+.i(action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>",btnName="toggleSort",btnText="<?php if($sortMode == 'sortByUsername') {echo 'Sort By Date';} else if($sortMode == 'sortByDate') {echo 'Sort By Username';} ?>",text="",name="sortMode",type="hidden",value="<?php echo $sortMode;?>",text="",name="currentPostIndex",type="hidden",value="<?php echo $currentPostIndex;?>",text="",name="currentStream",type="hidden",value="<?php echo $currentStream;?>",text="",name="username",type="hidden",value="<?php echo $username;?>",text="",name="stream",type="hidden",value="<?php echo $stream;?>)
+.d()
+
+.i(action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>",btnName="previous",btnText="Previous",text="",name="sortMode",type="hidden",value="<?php echo $sortMode;?>",text="",name="currentPostIndex",type="hidden",value="<?php echo $currentPostIndex;?>",text="",name="currentStream",type="hidden",value="<?php echo $currentStream;?>",text="",name="username",type="hidden",value="<?php echo $username;?>",text="",name="stream",type="hidden",value="<?php echo $stream;?>")
+
+.i(action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>",btnName="next",btnText="Next",text="",name="sortMode",type="hidden",value="<?php echo $sortMode;?>",text="",name="currentPostIndex",type="hidden",value="<?php echo $currentPostIndex;?>",text="",name="currentStream",type="hidden",value="<?php echo $currentStream;?>",text="",name="username",type="hidden",value="<?php echo $username;?>",text="",name="stream",type="hidden",value="<?php echo $stream;?>")
+.d()
+
+.t(file="displayMessage.php")
+
+.d()
+.l(text="Change User",link="index.php")

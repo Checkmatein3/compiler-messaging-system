@@ -1,0 +1,2 @@
+testHTML<BR>
+with multiple lines

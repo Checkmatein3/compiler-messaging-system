@@ -1,0 +1,17 @@
+.b(name="Description",link="page")
+.h(size=5,text="some header!")
+.d()
+.e(exe="ls").l(text="this line has 2 elements",link="some link")
+.i(action="filename",text="this line has 3 elements",name="some name",value="some value").p(image="image name",link="url").d()
+.t(file="testHTML.txt",text="some text")
+
+.t(file="filename",text="empty line in file above this element")
+.r(action="filename",name="some name",value="some value",alt="hi",value="a second value",value="a third value")
+.t(file="filename with spaces").t(text="the attributes contain lots of spaces")
+.i(action="phone.php",text="Phone Number",name="number",value="123-456-7890",text="Name",name="name",value="Bob")
+
+.t(text="the following elements will use default attributes")
+.h()
+.l(link="url")
+.p(image="some image")
+.t()

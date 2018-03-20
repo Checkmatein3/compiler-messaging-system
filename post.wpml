@@ -1,0 +1,9 @@
+.h(text="Post")
+.t(file="postphp1.php").m().t(file="postphp2.php")
+.v(function="printStreamsWithUsername",args="$username").t(file="postphp3.php")
+
+.i(action="post.php",text="Stream: ",name="streamForPost",value="<?php if ($stream != 'all') { echo $stream; }?>",text="Message: ",name="messageForPost",value="",text="",type="hidden",name="username",value="<?php echo $username;?>",text="",type="hidden",name="stream",value="<?php echo $stream;?>")
+
+.d()
+.t(file="viewLink.php")
+.l(text="Change User",link="index.php")

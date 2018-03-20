@@ -1,0 +1,4 @@
+.h(text="Message Viewer Login")
+.t(file="indexphp.php")
+.i(action="stream.php",btnText="Login",text="Username: ",name="username",value="")
+.b(name="indexAddAuthor",link="addAuthor.php",btnText="Add/Remove Author")
