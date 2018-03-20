@@ -6,12 +6,19 @@
     March 31,2017
     Database for a message management and viewing system. Database reset program
 
-    Assignment 3: Implementation of an Interface Description Language that allows 
+    Assignment 3
+    March 19, 2017
+    Implementation of an Interface Description Language that allows 
     for dynamically building the web interface of a message management and viewing 
     system.
 
+    Assignment 2
     February 17,2017
     This program acts as a message management and viewing system.
+
+    Assignment 1
+    January 27,2017
+    This program converts c++light(.cc) source code to c(.c) source code.
 ***********************************************************************************
 */
 
