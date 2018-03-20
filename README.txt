@@ -60,7 +60,7 @@ The program also contains the following custom functions for use by the viewing 
 
 Assignment 3:
 IDL
-**********
+*************
 This program allows for generating php files containing html and css from 
 configuration files with a .wpml suffix containing Interface Description Language.
 
@@ -90,8 +90,9 @@ appear anywhere, and attributes listed under the same number can appear anywhere
 
 For details of adding each interface element, refer to IDL.h.
 
+Assignment 2:
 Web View
-**********
+*************
 This program allows users to view messages from streams.
 
 Go to <serverPath>/index.php to begin at the home page of the web interface for the message 
@@ -133,6 +134,28 @@ When redirected to post.php, the user can enter the stream they wish to post to 
 the text area, then click the submit button to submit the post. The user can also cancel creating 
 a new post by click the back button to return to view.php.
 
+Assignment 1
+C compiler
+************
+To compile the program:
+make
+
+To run the program:
+./a1 <file.cc>
+
+Features:
+- converts classes to structs
+- constructor links function pointers to corresponding struct
+- method names mangled to support overloading and same function names from multiple classes 
+- class methods accept struct as one of their paramaters
+- formatting preserved!
+
+
+***********************************************************************************
+Known Limitations
+***********************************************************************************
+- overloaded function calls in main are not converted to the right name
+- class variables used in methods do not have preceding struct name and access operator
 
 
 ***********************************************************************************
